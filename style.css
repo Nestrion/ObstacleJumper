@@ -1,0 +1,95 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Times New Roman", Times, serif;
+}
+
+body {
+  background-color: black;
+}
+
+#game {
+  width: 50vw;
+  height: 30vh;
+  border: 1px solid black;
+  position: relative;
+  /* transform: translate(-50%, -50%); */
+  background-color: white;
+  overflow: hidden;
+}
+
+#character {
+  width: 1vw;
+  height: 5vh;
+  /* background-color: red; */
+  /* position: absolute; */
+  position: absolute;
+  bottom: 0;
+  left: 2vw;
+}
+
+#character img {
+  width: 100%;
+  height: 100%;
+}
+
+#score {
+  color: red;
+  font-size: 2rem;
+  /* position: absolute; */
+}
+
+#box {
+  width: 50%;
+  height: 50%;
+  /* background-color: aqua; */
+  top: 20%;
+  left: 25%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.animate {
+  animation: jump 500ms;
+}
+
+#block {
+  width: 3vw;
+  height: 5vh;
+  /* background-color: blue; */
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  animation: block 2.5s infinite linear;
+}
+
+#block img {
+  width: 100%;
+  height: 100%;
+}
+@keyframes jump {
+  0% {
+    bottom: 0;
+  }
+  30% {
+    bottom: 20%;
+  }
+  70% {
+    bottom: 20%;
+  }
+  100% {
+    bottom: 0;
+  }
+}
+
+@keyframes block {
+  0% {
+    right: -20%;
+  }
+  100% {
+    right: 120%;
+  }
+}
