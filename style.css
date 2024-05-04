@@ -39,6 +39,11 @@ body {
   /* position: absolute; */
 }
 
+#instructions {
+  color: rgb(134, 0, 0);
+  font-size: 2rem;
+}
+
 #box {
   width: 50%;
   height: 50%;
